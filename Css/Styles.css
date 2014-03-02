@@ -1,0 +1,46 @@
+a{
+	color: #22BCE0
+}
+
+body{
+	background-color: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+header{
+	background-color: #1d1d19;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+
+header figure{
+	float: left;
+}
+
+header h1{
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 0 70px 0 0 ;
+}
+
+header #Avatar {
+	margin: 0.5em 0.5em 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+header #Avatar img{
+	border-radius: 50%;
+	width: 50px;
+}
+
+header #Logo img{
+	border-right: 1px solid white;
+	padding-right: 0.5em;
+	margin-right: 0.5em;
+	width: 80px;
+}
