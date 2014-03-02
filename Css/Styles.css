@@ -105,3 +105,75 @@ nav ul #Publicar_Nav a{
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }
+
+#Contenido{
+	margin: 1em;
+}
+
+#Contenido .Item{
+	background-color: white;
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
+}
+
+#Contenido .Item .Autor_Item{
+	color: #AAA;
+}
+
+#Contenido .Item .Datos_Item{
+	margin: 1em 1em 0 0;
+}
+
+#Contenido .Item .Datos_Item .Fecha_Item{
+	color: #AAA;
+	float: right;
+}
+
+#Contenido .Item .Datos_Item .Tag_Item{
+	background-color: #F3502A;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+
+#Contenido .Item .DaftPunk_Item{
+	float: left;
+	margin-right: 1em;
+}
+
+#Contenido .Item .DaftPunk_Item img{
+	width: 96px;
+}
+
+#Contenido .Item .Titulo_Item{
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 0;
+	padding: 1em 1em 0 0;
+}
+
+#Contenido .Item .Titulo_Item a{
+	color: #444;
+	text-decoration: none;
+}
+
+#Contenido .Item .Votacion{
+	background-color: white;
+	border-radius: 0 0 0.5em 0.5em;
+	left: 3%;
+	margin-top: 3px;
+	padding: 0.5em 1em;
+	position: absolute;
+	right: 3%;
+	top: 100%;
+}
+
+#Contenido .Item .Votacion .Comentarios_Item,
+#Contenido .Item .Votacion .Guardar_Item{
+	float: right;
+}
+
