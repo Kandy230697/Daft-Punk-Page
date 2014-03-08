@@ -52,6 +52,11 @@ a
 	color: #22BCE0;
 }
 
+aside
+{
+	display: none;
+}
+
 body
 {
 	background-color: #EEEEEE;
@@ -123,12 +128,22 @@ header #Avatar img
 	border: 3px solid #F3502A;
 }
 
-header #Logo img
+header #Logo
 {
 	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+}
+
+header #Logo img
+{
+	transition:0.5s;	
 	width: 80px;
+}
+
+header #Logo img:hover
+{
+	transform: rotate(360deg);
 }
 
 nav
@@ -156,14 +171,12 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	transition: 0.3s;
 }
 nav ul li a:hover
 {
-	color: white;
-	display: block;
-	padding: 0.5em;
-	text-decoration: none;
-	background-color: rgba(0,0,0,0.5);
+	color: black;
+	background-color: rgba(255,255,255,0.7);
 }
 
 nav ul #Publicar_Nav 
@@ -181,6 +194,11 @@ nav ul #Publicar_Nav a
 	font-style: italic;
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
+nav ul #Publicar_Nav a:hover
+{
+	box-shadow: rgba(255,255,255,0.5) 1px 1px 20px;
 }
 
 #Contenido
@@ -281,11 +299,42 @@ nav ul #Publicar_Nav a
 }
 
 
-
-
 #Contenido .Item .Votacion .Comentarios_Item,
 #Contenido .Item .Votacion .Guardar_Item
 {
 	float: right;
 }
 
+@media screen and (min-width: 800px) {
+	#Contenido
+	{
+		overflow: hidden;
+	}
+
+	#Contenido .Item
+	{
+		float: left;
+		width: 49%;
+	}
+
+	#Contenido .Item:nth-child(odd)
+	{
+		margin-right: 2%;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+
+	aside video
+	{
+		margin: 0 0 2em 0em;
+		width: 100%;
+	}
+}
