@@ -338,3 +338,20 @@ nav ul #Publicar_Nav a:hover
 		width: 100%;
 	}
 }
+
+/* Formulario */
+
+.formulario
+{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+
+.formulario input
+{
+	border: 1px solid #888;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+
