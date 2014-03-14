@@ -94,7 +94,7 @@ footer p:last-child:before
 
 header
 {
-	background-color: #1d1d19;
+	background-color: #2a2a25;
 	color: white;
 	overflow: hidden;
 	padding: 0.5em;
@@ -141,14 +141,14 @@ header #Logo img
 }
 
 header #Logo img:hover
-{
-	transform: rotate(360deg);
-	transition:0.5s;
+{ 
+	-webkit-transform: rotate(360deg);
+	-webkit-transition:0.8s;
 }
 
 nav
 {
-	background-color: #0f7acb;
+	background-color: #236eff;
 	position: relative;
 }
 
@@ -157,6 +157,7 @@ nav ul
 	list-style: none;
 	margin: 0;
 	padding: 0 6.3em 0 0.5em;
+	text-align: center;
 }
 
 nav ul li
@@ -171,7 +172,7 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
-	transition: 0.3s;
+	-webkit-transition: 0.3s;
 }
 nav ul li a:hover
 {
@@ -190,7 +191,7 @@ nav ul #Publicar_Nav a
 {
 	background-color: #fec209;
 	border-radius: 5px;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
 	font-style: italic;
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
@@ -198,7 +199,7 @@ nav ul #Publicar_Nav a
 
 nav ul #Publicar_Nav a:hover
 {
-	box-shadow: rgba(255,255,255,0.5) 1px 1px 20px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
 }
 
 #Contenido
