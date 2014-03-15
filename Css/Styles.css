@@ -154,16 +154,18 @@ nav
 
 nav ul
 {
+	line-height: 20px;
 	list-style: none;
 	margin: 0;
-	padding: 0 6.3em 0 0.5em;
-	text-align: center;
+	padding: 0 7em 0 0.5em;
+	overflow-x: auto;
+	white-space: nowrap;
 }
 
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin: 0 2em 0 0;
 }
 
 nav ul li a
@@ -309,6 +311,20 @@ nav ul #Publicar_Nav a:hover
 #Contenido .Item .Votacion .Guardar_Item
 {
 	float: right;
+}
+
+@media screen and (max-width: 480px) {
+	aside
+	{
+		display: block;
+		margin: 1em;
+	}
+
+	aside video
+	{
+		margin: 0 0 2em 0em;
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 800px) {
