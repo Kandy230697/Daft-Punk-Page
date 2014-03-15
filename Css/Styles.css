@@ -257,7 +257,7 @@ nav ul #Publicar_Nav a:hover
 {
 	font-size: 1.2em;
 	font-style: italic;
-	margin-bottom: 0;
+	margin-top: -0.5em;
 	padding: 1em 1em 0 0;
 }
 
@@ -265,6 +265,11 @@ nav ul #Publicar_Nav a:hover
 {
 	color: #444;
 	text-decoration: none;
+}
+
+#Contenido .Item .Titulo_Item a:hover
+{
+	color: #43a9ff;
 }
 
 #Contenido .Item .Votacion

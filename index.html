@@ -8,7 +8,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="Css/Normalize.css">
   	<link rel="stylesheet" href="Css/Styles.css">
-  	<script src="JavaScript/PrefixFree.js"></script>
 </head>
 <body>
 	<header>
@@ -30,13 +29,14 @@
 			<li><a href="#">Daft CLub</a></li>
 			<li><a href="#">Discovery</a></li>
 			<li id="Publicar_Nav">
-				<a href="#" class="icon-lapiz">Publicar</a>
+				<a href="#" class="icon-lapiz" id="mostrar_form">Publicar</a>
 			</li>
 		</ul>
 	</nav>
 	<form action="" id="formulario" class="formulario">
 		<input type="text" id="titulo" placeholder="Título" required />
-		<input type="url" id="url" placeholder="Link" required />
+		<input type="url" id="url" placeholder="Url" required />
+		<input type="text" id="autor" placeholder="Autor" required />
 		<input type="submit" value="Agregar" />
 	</form>
 	<aside>
@@ -223,5 +223,7 @@
 			Fili Inc. 2014
 		</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="JavaScript/Script.js"></script>
 </body>
 </html>
