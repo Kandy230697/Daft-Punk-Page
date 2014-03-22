@@ -4,11 +4,20 @@ var $form = $('#formulario'),
 	$autor = $('#autor'),
 	$button = $('#mostrar_form'),
 	$list = $('#Contenido'),
+	$aside = $('#no_Relevante'),
 	$post = $('.Item').first();
 
+if (localStorage.getItem('autosave')){
+	$titulo.val(sessionStorage.getItem('titulo'));
+	$url.val(sessionStorage.getItem('url'));
+	$autor.val(sessionStorage.getItem('autor'));
+}
 
-function mostrarFormulario() {
+
+function mostrarOcultarFormulario() {
 	$form.slideToggle();
+	$list.slideToggle();
+	$aside.slideToggle();
 	return false;
 }
 
@@ -25,14 +34,18 @@ function agregarPost(){
 	$clone.find('.Autor_Item a')
 		.text(autor)
 
-
 	$clone.hide();
+
 	$list.prepend($clone);
+	mostrarOcultarFormulario();
+	$titulo.val("");
+	$url.val("");
+	$autor.val("");
 	$clone.fadeIn();
 	return false;
 }
 
 //EVENTOS
-$button.click( mostrarFormulario );
+$button.click( mostrarOcultarFormulario );
 $form.on('submit', agregarPost);
 
