@@ -7,11 +7,19 @@ var $form = $('#formulario'),
 	$aside = $('#no_Relevante'),
 	$post = $('.Item').first();
 
+localStorage.autosave = "1";
+
 if (localStorage.getItem('autosave')){ 
 	$titulo.val(sessionStorage.getItem('titulo'));
 	$url.val(sessionStorage.getItem('url'));
 	$autor.val(sessionStorage.getItem('autor'));
 }
+
+var id = setInterval(function(){
+	sessionStorage.setItem('titulo', $titulo.val());
+	sessionStorage.setItem('url', $url.val());
+	sessionStorage.setItem('autor', $autor.val());
+}, 1000); //CADA SEGUNDO REVISA NUESTRO FORMULARIO Y LO QUE HAY EN LOS INPUTS
 
 function mostrarOcultarFormulario() {
 	$form.slideToggle();
@@ -19,12 +27,6 @@ function mostrarOcultarFormulario() {
 	$aside.slideToggle();
 	return false;
 }
-
-var id = setInterval(function(){
-	sessionStorage.setItem('titulo', $titulo.val());
-	sessionStorage.setItem('url', $url.val());
-	sessionStorage.setItem('autor', $autor.val());
-}, 1000);
 
 function agregarPost(){
 	var autor = $autor.val(),

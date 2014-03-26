@@ -173,7 +173,7 @@ header #Logo img:hover
 
 nav
 {
-	background-color: #236eff;
+	background-color: #21afd9;
 	position: relative;
 }
 
@@ -351,6 +351,7 @@ nav ul #Publicar_Nav a:hover
 		margin: 0 0 2em 0em;
 		width: 100%;
 	}
+
 }
 
 @media screen and (min-width: 800px) {
