@@ -25,18 +25,47 @@ function obtenerGeoInfo(lat, longi){
 		}
 
 	});
-
 }
 
 function procesarGeoInfo(datos){
-	console.log(datos);
 	var res = datos.query.results.Result;
 	var barrio = res.neighborhood;
 	var ciudad = res.city;
 	var pais = res.country;
+	var woeid = res.woeid;
 
 	$('#geo')
 		.prepend('<p><strong>'+barrio+'</strong><br>'+ciudad+', '+pais+'</p>');
+
+	obtenerClima(woeid);
+}
+
+function obtenerClima(woeid){
+	var query = 'SELECT * FROM weather.forecast WHERE woeid="'+woeid+'" and u="c"';
+	query = encodeURIComponent(query);
+
+	$.ajax({
+		url: base_url+"q="+query,
+		dataType : 'jsonp',
+		jsonpCallback: 'procesarClima',
+		data: {
+			format: 'json'
+		}
+
+	});
+}
+
+function procesarClima(datos){
+	var clima = datos.query.results.channel;
+	var temp = clima.item.condition.temp;
+	var unit = clima.units.temperature;
+	var code = clima.item.condition.code;
+	var img = new Image();
+	img.src = "http://l.yimg.com/a/i/us/we/52/"+code+".gif"
+
+	$('#clima')
+		.append(img)
+		.append('<strong>'+temp+' '+unit+'º'+'</strong>');
 }
 
 
