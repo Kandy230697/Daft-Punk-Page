@@ -133,11 +133,16 @@ header figure
 
 header h1
 {
-	font-size: 1.2em;
+	font-size: 1.8em;
 	font-weight: normal;
-	margin: 0 70px 0 0 ;
+	margin: 0.8em 2em 0 3em ;
 }
 
+h2
+{
+	font-size: 1.5em;
+	margin: 1em 0 0em 1em;
+}
 header #Avatar
 {
 	margin: 0.7em 0.7em 0 0;
@@ -157,6 +162,7 @@ header #Logo
 {
 	border-right: 1px solid white;
 	padding-right: 0.5em;
+	margin-left: 0;
 	margin-right: 0.5em;
 }
 
@@ -210,6 +216,7 @@ nav ul li a:hover
 nav ul #Publicar_Nav 
 {
 	position: absolute;
+	margin: -1.8em 0.5em ;
 	right: 0;
 	top: -0.1em;
 }
